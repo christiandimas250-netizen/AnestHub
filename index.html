@@ -200,7 +200,13 @@
         .local-input-row input { width: 60px; padding: 2px 4px; text-align: right; background-color: rgba(0,0,0,0.2); border: 1px solid var(--border); color: var(--text-main); border-radius: 4px; }
         .adj-badge { font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; background: rgba(14, 165, 233, 0.1); color: var(--primary); display: inline-block; border: 1px solid rgba(14, 165, 233, 0.2); }
     </style>
-</head>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script></head>
 <body>
 
     <header class="app-header">
